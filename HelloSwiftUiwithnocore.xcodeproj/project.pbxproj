@@ -14,6 +14,13 @@
 		0360C23D2991004600F6BF5C /* HelloSwiftUiwithnocoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360C23C2991004600F6BF5C /* HelloSwiftUiwithnocoreTests.swift */; };
 		0360C2472991004600F6BF5C /* HelloSwiftUiwithnocoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360C2462991004600F6BF5C /* HelloSwiftUiwithnocoreUITests.swift */; };
 		0360C2492991004600F6BF5C /* HelloSwiftUiwithnocoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360C2482991004600F6BF5C /* HelloSwiftUiwithnocoreUITestsLaunchTests.swift */; };
+		0360C256299101CF00F6BF5C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360C255299101CF00F6BF5C /* ImageView.swift */; };
+		0360C258299101EF00F6BF5C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360C257299101EF00F6BF5C /* Map.swift */; };
+		03E0B3DB29925E8100F0385E /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0B3DA29925E8100F0385E /* LandmarkList.swift */; };
+		03E0B3DD29925EE500F0385E /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0B3DC29925EE500F0385E /* LandmarkRow.swift */; };
+		03E0B3E029925F0A00F0385E /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E0B3DF29925F0A00F0385E /* landmarkData.json */; };
+		03E0B3E329925F6500F0385E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0B3E229925F6500F0385E /* Service.swift */; };
+		03E0B3E529925F9100F0385E /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0B3E429925F9100F0385E /* Landmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		0360C2422991004600F6BF5C /* HelloSwiftUiwithnocoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUiwithnocoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0360C2462991004600F6BF5C /* HelloSwiftUiwithnocoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUiwithnocoreUITests.swift; sourceTree = "<group>"; };
 		0360C2482991004600F6BF5C /* HelloSwiftUiwithnocoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUiwithnocoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0360C255299101CF00F6BF5C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		0360C257299101EF00F6BF5C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		03E0B3DA29925E8100F0385E /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		03E0B3DC29925EE500F0385E /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		03E0B3DF29925F0A00F0385E /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		03E0B3E229925F6500F0385E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		03E0B3E429925F9100F0385E /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,9 @@
 		0360C21F2991004100F6BF5C = {
 			isa = PBXGroup;
 			children = (
+				03E0B3E129925F2B00F0385E /* Model */,
+				03E0B3DE29925EEE00F0385E /* Resource */,
+				03E0B3D929925E5E00F0385E /* View */,
 				0360C22A2991004100F6BF5C /* HelloSwiftUiwithnocore */,
 				0360C23B2991004600F6BF5C /* HelloSwiftUiwithnocoreTests */,
 				0360C2452991004600F6BF5C /* HelloSwiftUiwithnocoreUITests */,
@@ -98,6 +115,8 @@
 				0360C22D2991004100F6BF5C /* ContentView.swift */,
 				0360C22F2991004500F6BF5C /* Assets.xcassets */,
 				0360C2312991004500F6BF5C /* Preview Content */,
+				0360C255299101CF00F6BF5C /* ImageView.swift */,
+				0360C257299101EF00F6BF5C /* Map.swift */,
 			);
 			path = HelloSwiftUiwithnocore;
 			sourceTree = "<group>";
@@ -125,6 +144,32 @@
 				0360C2482991004600F6BF5C /* HelloSwiftUiwithnocoreUITestsLaunchTests.swift */,
 			);
 			path = HelloSwiftUiwithnocoreUITests;
+			sourceTree = "<group>";
+		};
+		03E0B3D929925E5E00F0385E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03E0B3DC29925EE500F0385E /* LandmarkRow.swift */,
+				03E0B3DA29925E8100F0385E /* LandmarkList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03E0B3DE29925EEE00F0385E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				03E0B3DF29925F0A00F0385E /* landmarkData.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		03E0B3E129925F2B00F0385E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03E0B3E229925F6500F0385E /* Service.swift */,
+				03E0B3E429925F9100F0385E /* Landmark.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +278,7 @@
 			files = (
 				0360C2332991004500F6BF5C /* Preview Assets.xcassets in Resources */,
 				0360C2302991004500F6BF5C /* Assets.xcassets in Resources */,
+				03E0B3E029925F0A00F0385E /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0360C256299101CF00F6BF5C /* ImageView.swift in Sources */,
+				03E0B3E329925F6500F0385E /* Service.swift in Sources */,
+				03E0B3DB29925E8100F0385E /* LandmarkList.swift in Sources */,
+				03E0B3E529925F9100F0385E /* Landmark.swift in Sources */,
+				03E0B3DD29925EE500F0385E /* LandmarkRow.swift in Sources */,
 				0360C22E2991004100F6BF5C /* ContentView.swift in Sources */,
+				0360C258299101EF00F6BF5C /* Map.swift in Sources */,
 				0360C22C2991004100F6BF5C /* HelloSwiftUiwithnocoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
